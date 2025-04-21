@@ -7,8 +7,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "electron": "npm run build && electron . --dev",
+    "electron:dev": "npm run build && electron . --dev",
     "electron:build": "set electron_builder_skip_lib_update=true && npm run build && electron-builder",
+    "electron:build:mac": "set electron_builder_skip_lib_update=true && npm run build && electron-builder --mac",
     "test": "ng test"
   },
   "build": {
